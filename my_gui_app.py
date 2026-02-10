@@ -8,21 +8,53 @@ root = ctk.CTk()
 root.title("My App")
 root.geometry("700x500")
 
+# Label
+label1 = ctk.CTkLabel(root, text="First Name", font=("Arial", 18), fg_color="#00ffff", text_color="#000000", corner_radius=10)
+label1.place(x=91, y=64)
+
+# Button
+button2 = ctk.CTkButton(root, text="Submit", font=("Arial", 12), fg_color="#3498db", hover_color="#2980b9", corner_radius=10, width=150, height=35)
+button2.place(x=87, y=252)
+
+# Button
+button3 = ctk.CTkButton(root, text="Clear", font=("Arial", 12), fg_color="#3498db", hover_color="#2980b9", corner_radius=10, width=150, height=35)
+button3.place(x=329, y=251)
+
+# Entry
+entry4 = ctk.CTkEntry(root, font=("Arial", 12), corner_radius=10, width=300)
+entry4.place(x=306, y=64)
+
+# Label
+label5 = ctk.CTkLabel(root, text="Last Name", font=("Arial", 18), fg_color="#80ffff", text_color="#000000", corner_radius=10)
+label5.place(x=91, y=125)
+
+# Entry
+entry6 = ctk.CTkEntry(root, font=("Arial", 12), corner_radius=10, width=300)
+entry6.place(x=304, y=130)
+
+# Checkbutton
+checkbutton7 = ctk.CTkCheckBox(root, text="Checkbutton 7", font=("Arial", 12), fg_color="#000040")
+checkbutton7.place(x=509, y=196)
+
+# Label
+label8 = ctk.CTkLabel(root, text="Password", font=("Arial", 12), fg_color="#f0f0f0", text_color="#000000", corner_radius=10)
+label8.place(x=92, y=193)
+
+# Entry
+entry9 = ctk.CTkEntry(root, font=("Arial", 12), corner_radius=10, width=150)
+entry9.place(x=306, y=196)
+
+# Scale
+scale10 = ctk.CTkSlider(root, fg_color="#3498db", width=150)
+scale10.place(x=362, y=363)
+
 # Progressbar
-progressbar1 = ctk.CTkProgressBar(root, fg_color="#3498db", corner_radius=10, width=150)
-progressbar1.set(0.5)
-progressbar1.place(x=100, y=100)
-
-# Frame
-frame2 = ctk.CTkFrame(root, fg_color="#f0f0f0", corner_radius=10, width=150, height=35)
-frame2.place(x=104, y=165)
+progressbar11 = ctk.CTkProgressBar(root, fg_color="#3498db", corner_radius=10, width=150)
+progressbar11.set(0.5)
+progressbar11.place(x=108, y=370)
 
 # Radiobutton
-radiobutton3 = ctk.CTkRadioButton(root, text="Radiobutton 3", font=("Arial", 12), fg_color="#3498db")
-radiobutton3.place(x=428, y=89)
-
-# Radiobutton
-radiobutton4 = ctk.CTkRadioButton(root, text="Radiobutton 4", font=("Arial", 12), fg_color="#3498db")
-radiobutton4.place(x=115, y=233)
+radiobutton12 = ctk.CTkRadioButton(root, text="Radiobutton 13", font=("Arial", 12), fg_color="#3498db")
+radiobutton12.place(x=672, y=198)
 
 root.mainloop()
